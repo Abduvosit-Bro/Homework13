@@ -45,3 +45,5 @@ def calculate_deposit(client_id, months):
 def client_dashboard(client_id):
     cursor.execute('SELECT * FROM clients WHERE id = ?', (client_id,))
     return cursor.fetchone()
+
+bank.close()
